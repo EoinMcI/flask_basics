@@ -1,0 +1,26 @@
+<!-- app/home/templates/index.html -->
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "flask_basics_master.html" %}
+
+{% block title %}Home{% endblock %}
+{% block body %}
+{{ utils.flashed_messages() }}
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>Eoin Code</h1>
+                    <hr class="intro-divider">
+                    <h3>This is the landing page or homepage and is the first page you see.</h3>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <h3>Some general information about the the purpose of the app</h3>
+                <p>The page is at app/home/templates/index.html</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
